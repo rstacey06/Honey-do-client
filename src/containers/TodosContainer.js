@@ -13,11 +13,15 @@ class TodosContainer extends Component {
   }
 
   render() {
-        return
-
-
+        return(
+          <Container>
+            <TodosHeader />
+              <Todos todos={this.props.todos} deleteTodo={this.props.deleteTodo} />
+            <TodoInput />
+          </Container>
+        )
+      }
     }
-}
 
 const mapStateToProps = (state) => {
     return {
