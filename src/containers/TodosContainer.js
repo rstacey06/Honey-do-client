@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-// import Todos from '../components/Todos/Todos';
-// import TodoInput from '../components/Todos/TodoInput';
+import Todos from '../components/Todos/Todos';
+import TodoInput from '../components/Todos/TodoInput';
 import { connect } from 'react-redux';
 import { fetchTodos, deleteTodo } from '../actions/todosActions';
-// import { Container } from 'semantic-ui-react';
-// import TodosHeader from '../components/Todos/TodosHeader';
+import { Container } from 'semantic-ui-react';
+import TodosHeader from '../components/Todos/TodosHeader';
 
 class TodosContainer extends Component {
 
