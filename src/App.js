@@ -1,18 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
+import Main from './containers/Main';
 
-class App extends React.Component {
+class App extends Component {
 
- //  componentDidMount() {
- //   fetch('http://localhost:3000/api/todos/3/goals')
- //   .then(response => response.json())
- //   .then(data => console.log(data))
- // }
 
   render() {
     return (
-      <div className="App">
-        App
+      <div>
+        <Main />
       </div>
     );
   }
