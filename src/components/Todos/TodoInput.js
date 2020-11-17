@@ -3,6 +3,12 @@ import { addTodo } from '../../actions/todosActions';
 import { connect } from 'react-redux';
 
 class TodoInput extends Component {
+
+  state = {
+      target: "",
+      plan: ""
+  }
+  
   render(){
     return(
       <div>
