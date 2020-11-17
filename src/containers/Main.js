@@ -6,7 +6,7 @@ import TodoInput from '../components/Todos/TodoInput';
 import TodosContainer from './TodosContainer';
 import GoalsContainer from './GoalsContainer';
 import MainHeader from '../components/MainHeader';
-//import { Container } from 'semantic-ui-react';
+import { Container } from 'semantic-ui-react';
 
 class Main extends Component {
   render() {

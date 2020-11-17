@@ -1,6 +1,6 @@
 import React from 'react';
 import Todo from './Todo';
-// import { Container } from 'semantic-ui-react';
+import { Container } from 'semantic-ui-react';
 
 const Todos = props => {
 
