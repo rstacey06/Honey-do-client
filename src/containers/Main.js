@@ -20,7 +20,7 @@ class Main extends Component {
            <Route exact path='/' render={Home} />
            <Route exact path='/todos/new' component={TodoInput} />
            <Route exact path='/todos' component={TodosContainer} />
-          <Route exact path='/todos/:todoId/goals' component={GoalsContainer} />
+           <Route exact path='/todos/:todoId/goals' component={GoalsContainer} />
          </Container>
        </Container>
     </div>
