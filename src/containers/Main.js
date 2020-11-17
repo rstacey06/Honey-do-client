@@ -17,10 +17,10 @@ class Main extends Component {
           <NavBar />
 
          <Container>
-           <Route />
-           <Route />
-           <Route />
-           <Route />
+           <Route exact path='/' render={Home} />
+           <Route exact path='/todos/new' component={TodoInput} />
+           <Route exact path='/todos' component={TodosContainer} />
+          <Route exact path='/todos/:todoId/goals' component={GoalsContainer} />
          </Container>
        </Container>
     </div>
