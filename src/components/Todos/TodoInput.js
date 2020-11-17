@@ -8,7 +8,7 @@ class TodoInput extends Component {
       target: "",
       plan: ""
   }
-  
+
   render(){
     return(
       <div>
@@ -17,3 +17,4 @@ class TodoInput extends Component {
     )
   }
 }
+export default connect(null, { addGoal })(GoalInput);
