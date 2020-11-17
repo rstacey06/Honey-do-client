@@ -13,8 +13,28 @@ export const fetchTodos = () => {
 export const fetchTodo = id => {
   return (dispatch) => {
     dispatch({type: 'LOADING_TODOS'})
-      return fetch(`${todosURL}/${id}`)
+    return fetch(`${todosURL}/${id}`)
       .then(response => response.json())
       .then(todo => dispatch({type: 'FETCH_TODO', payload: todo}))
+    }
+  }
+
+  export const addTodo = todoInput => {
+    let data = {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(todoInput)
+    }
+    return dispatch => {
+      fetch(`${ todosURL }`, data)
+      .then(response => response.json())
+      .then(todo => dispatch({
+        type: 'CREATE_TODO',
+        payload: todo
+      }))
+      .catch(err => err)
     }
   }
